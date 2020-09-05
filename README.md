@@ -1,4 +1,4 @@
-# MASE2 Optimus theme
+# New generation MASE2 Optimus theme by Paulo Sergio Duff
 
 ## About and purpose
 
@@ -55,7 +55,7 @@ mv composer.phar /usr/local/bin/composer
 After installing composer, use the following commands to install Optimus to your Magento 2 installation:
 
 ```
-composer require studioemma/magento2-theme-optimus
+composer require paulosergioduff/ng-magento2-theme-optimus
 ```
 
 After installing "Studio Emma Mase 2 Optimus" theme, you can verify that the installation succeeded by going to the Magento 2 back-end and navigating to **Content -> Design -> Themes**. If it listed there, you should be happy.
