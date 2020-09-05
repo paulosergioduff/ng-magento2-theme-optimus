@@ -1,0 +1,45 @@
+
+body {
+	width: 100%;
+  	height: 100vh;
+    background: url('https://cdn.jsdelivr.net/gh/paulosergioduff/cdnfiles@master/images/Rectangle.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.action.tocart.primary{
+	background-color: #77ff4f;
+	border: 1px solid #b9ffa0;
+	color: #308a06; 
+}
+
+#top-cart-btn-checkout{
+  background-color: #77ff4f;
+	border: 1px solid #b9ffa0;
+	color: #308a06; 
+}
+
+
+.navigation.ul{
+	display: none;
+}
+
+.page.bottom{
+	background-color: black;
+	color: white;
+}
+
+/*
+.logo{
+  display: none;
+}*/
+
+.sections.nav-sections{
+  background-color: rgba(0,0,0,0.0);
+}
+
+/*
+.column.main{
+  background-color: white;
+}*/
+

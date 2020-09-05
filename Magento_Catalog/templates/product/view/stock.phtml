@@ -1,0 +1,12 @@
+<!-- This template is meant for stock information: be it dynamic or static (CMS block) -->
+
+<?php
+
+    //Load block
+    $contentblock = $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('product_info_stock')->toHtml();
+    //Check to see if block is empty
+    if(!empty($contentblock)):
+        //If not empty -> output block
+        echo $contentblock;
+    endif;
+?>

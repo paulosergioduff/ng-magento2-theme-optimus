@@ -1,0 +1,155 @@
+<?php
+
+// @codingStandardsIgnoreFile
+
+?>
+<?php
+/**
+ * Top menu for store
+ *
+ * @see \StudioEmma\Optimus\Block\Html\Topmenu
+ */
+?>
+<?php
+    $columnsLimit = $block->getColumnsLimit() ?: 0;
+    $_menu = $block->getHtml('level-top', 'submenu', $columnsLimit);
+    $currentUrl = $block->getCurrentUrl();
+?>
+
+<nav class="navigation" data-action="navigation" style="background-color: rgba(0,0,0,0.0);">
+
+<!--############# NOVO MENU ############################### -->
+
+<style>
+
+  .redmenu{
+  border-bottom: 5px solid red;
+}
+
+
+    .button{
+      background-image: linear-gradient( to right, #33FFBB , #3396FF , #33CAFF , #33FFD1 );
+      width: 90px;
+      height: 40px;
+    }
+
+    /* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 1160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.menuContainerFloat{
+  float: left;  
+
+}
+
+.commonMenu{
+  padding-left: 30px;
+}
+</style>
+
+
+
+<div class="menuContainerFloat">
+
+  <div class="dropdown commonMenu">
+  <span class="redmenu">Menu 1</span>
+  <div class="dropdown-content">
+    <?php echo $this->getLayout()->createBlock("Magento\Catalog\Block\Product\Widget\NewWidget")->setDisplayType("all_products")->setProductsCount("5")->setTemplate("product/widget/new/content/new_grid.phtml")->toHtml(); ?>
+
+  </div>
+</div>
+
+<div class="dropdown commonMenu">
+  <span class="redmenu">Menu 1</span>
+  <div class="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+</div>
+  
+</div>
+
+
+
+<!--################ FIM DO NOVO MENU ######################### -->
+
+
+
+	<!-- menu original -->
+    <!--<ul data-mage-init='{"menu":{"responsive":true, "expanded":true, "position":{"my":"left top","at":"left bottom"}}}'>
+        <li class="level0 home <?php if($currentUrl == '/'): ?>active<?php endif; ?>"><a href="/" title="<?php echo __('Home') ?>" class="level-top"><span></span></a></li>
+        <?php echo $_menu; ?>
+    </ul>-->
+</nav>
