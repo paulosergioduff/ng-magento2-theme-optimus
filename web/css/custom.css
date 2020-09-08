@@ -29,6 +29,10 @@ body {
 	color: white;
 }
 
+.control{
+	display: none;
+}
+
 /*
 .logo{
   display: none;
@@ -42,4 +46,33 @@ body {
 .column.main{
   background-color: white;
 }*/
+
+.search{
+	display: none;
+}
+
+.block-search{
+	display: none;
+}
+
+.page-header .header.panel {
+    padding-bottom: 10px;
+	padding-top: 10px;
+	display: none;
+  }
+.panel{
+	display: none;
+}
+
+.page-header {
+    padding-bottom: 9px;
+    margin: 40px 0 20px;
+    border-bottom:  0px solid red !important;
+}
+
+.page-footer {
+   
+    border-bottom:  0px solid red !important;
+}
+
 
